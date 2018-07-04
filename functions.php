@@ -127,11 +127,13 @@ function laser_highway_scripts() {
 	wp_enqueue_script( 'laser_highway-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 /**
- * Add Bootstrap
+ * Add Bootstrap and navwalker
  */
 	wp_enqueue_style ( 'bootstrap.css', get_template_directory_uri() . '/bootstrap/css/bootstrap.css' );
 	
 	wp_enqueue_script ( 'bootstrap.js', get_template_directory_uri() . '/bootstrap/js/bootstrap.js' );
+
+	require get_template_directory() . '/bootstrap-navwalker.php';
 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
