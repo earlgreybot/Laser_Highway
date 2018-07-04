@@ -130,6 +130,7 @@ class Bootstrap_NavWalker extends Walker_Nav_Menu {
 		/**
 		 * Add class '.nav-item' inside <li> tag for Bootstrap
 		 */
+
 		$classes[] = 'nav-item';
 
 		/**
