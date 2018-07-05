@@ -122,8 +122,8 @@ add_action( 'widgets_init', 'laser_highway_widgets_init' );
 function laser_highway_scripts() {
 	wp_enqueue_style( 'laser_highway-style', get_stylesheet_uri() );
 
-	// commented to remove hamburger
-	// wp_enqueue_script( 'laser_highway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// comment to remove hamburger
+	wp_enqueue_script( 'laser_highway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'laser_highway-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -134,7 +134,7 @@ function laser_highway_scripts() {
 	
 	wp_enqueue_script ( 'bootstrap.js', get_template_directory_uri() . '/bootstrap/js/bootstrap.js' );
 
-	require get_template_directory() . '/bootstrap/bootstrap-navwalker.php';
+	require_once get_template_directory() . '/bootstrap/class-wp-bootstrap-navwalker.php';
 
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

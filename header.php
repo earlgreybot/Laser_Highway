@@ -44,19 +44,19 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation>
+		<nav id="site-navigation" class="main-navigation nav>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-				'container'      => false,
-				'depth'          => 2, 
-				'menu_class'     => 'navbar-nav ml-auto',
-				'walker'         => new Bootstrap_NavWalker(), // This controls the display of the Bootstrap Navbar
-				'fallback_cb'    => 'Bootstrap_NavWalker::fallback' // For menu fallback
+				'theme_location' => 'primary',
+				'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+				'container'       => 'div',
+				'container_class' => 'collapse navbar-collapse',
+				'container_id'    => 'bs-example-navbar-collapse-1',
+				'menu_class'      => 'navbar-nav mr-auto',
+				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+				'walker'          => new WP_Bootstrap_Navwalker(),
 			) );
 			?>
-		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
