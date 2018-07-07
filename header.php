@@ -43,22 +43,19 @@
 				<p class="site-description"><?php echo $laser_highway_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 				'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
-				'container'       => 'div',
-				'container_class' => 'collapse navbar-collapse',
-				'container_id'    => 'bs-example-navbar-collapse-1',
-				'menu_class'      => 'navbar-nav mr-auto',
+				'container'       => 'nav',
+				'container_class' => 'main-navigation col-md-6',
+				'container_id'    => 'site-navigation',
+				'menu_class'      => 'nav nav-fill',
 				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
 				'walker'          => new WP_Bootstrap_Navwalker(),
 			) );
 			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
