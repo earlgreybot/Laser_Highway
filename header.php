@@ -44,10 +44,11 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation nav>
+		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'primary',
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
 				'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
 				'container'       => 'div',
 				'container_class' => 'collapse navbar-collapse',
