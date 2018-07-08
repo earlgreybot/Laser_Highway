@@ -18,6 +18,10 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Michroma|Roboto" rel="stylesheet">
+
 </head>
 
 <body <?php body_class(); ?>>

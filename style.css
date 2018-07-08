@@ -74,6 +74,13 @@ html {
 body {
 	background-color: #262425 !important;
 	color: #e5d3d0 !important;
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 14px !important;
+	font-weight: normal !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Michroma', 'Roboto', sans-serif !important;
 }
 
 hr {
@@ -124,6 +131,18 @@ figure {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Calendar (Simple Calendar Plugin)
+--------------------------------------------------------------*/
+
+.simcal-calendar {
+	width: 500px;
+}
+
+.simcal-calendar > span{
+	font-size: 100px !important;
 }
 
 /*--------------------------------------------------------------
@@ -217,15 +236,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #f279e4 !important;
 }
 
 a:visited {
-	color: purple;
+	color: #8379f2 !important;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #79c5f2 !important;
 }
 
 a:focus {
@@ -234,6 +253,7 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+	text-decoration: none !important;
 }
 
 /*--------------------------------------------------------------
