@@ -28,7 +28,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'laser_highway' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header container">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -47,6 +47,7 @@
 				<p class="site-description"><?php echo $laser_highway_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+		<span class='overdecoration container'>	--------------------------  ESSENTIALS -------------------------- </span>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -62,4 +63,4 @@
 			?>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">

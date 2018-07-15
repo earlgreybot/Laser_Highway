@@ -57,6 +57,7 @@ Commented out because bootstrap does this
 	Pale Magenta		#f279e4
 	Dust Storm			#e5d3d0
 	Rasin Black 		#262425
+	Highlight Black		#232122
 
 */
 
@@ -82,6 +83,53 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Michroma', 'Roboto', sans-serif !important;
 }
+
+h1 {
+	font-size: 32px !important;
+	padding-top: 20px;
+}
+
+/*footer*/
+
+.widget-area {
+	padding: 7px;
+	background-color: #232122;
+	margin: 10px;
+	display: inline-block;
+}
+
+.widget li {
+	display: inline-block;
+	list-style: none;
+	padding-right: 7px;
+	font-size: 12px;
+}
+
+
+.widget ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#meta-2 {
+	border: 0 !important;
+	height: 0;
+	padding: 10px;
+}
+
+.widget-title {
+	display: none;
+}
+
+.site-info {
+	margin-left: 20px;
+	padding: 7px;
+	display: inline-block;
+	font-size: 12px;
+	
+}
+
 
 hr {
 	background-color: #ccc;
@@ -137,13 +185,7 @@ table {
 # Calendar (Simple Calendar Plugin)
 --------------------------------------------------------------*/
 
-.simcal-calendar {
-	width: 500px;
-}
 
-.simcal-calendar > span{
-	font-size: 100px !important;
-}
 
 /*--------------------------------------------------------------
 # Forms
@@ -229,9 +271,6 @@ textarea {
 	width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -605,3 +644,61 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*--------------------------------------------------------------
+# Navigation and Header
+--------------------------------------------------------------*/
+
+/* this nav styling is currently at the bottom so it is below <a> styling which was previously taking priority */
+
+
+.menu-item {
+	margin: 10px;
+}
+
+#menu-item-15, #menu-item-16, #menu-item-17 {
+	background-color: #79c5f2;
+}
+
+a.nav-link {
+	margin: 3px 0 0 0 !important;
+	border: 0 !important;
+	padding: 0 !important;
+	text-transform: uppercase;
+	color: #262425 !important;
+	font-weight: bold;
+	height: 75px;
+	width: 75px;
+	border: 3px soild blue !important;
+	
+}
+
+.overdecoration {
+	border: 10px 0 0 0 solid red !important;
+	color: #e5d3d0;
+	font-weight: bold;
+	display: inline-block;
+	
+}
+
+.custom-logo {
+	max-width: 200px !important;
+	display: inline;
+}
+
+.site-title {
+	display: none;
+}
+
+.site-description {
+	display: inline-block;
+	width: 40%;
+	min-width: 250px;
+	margin: 20px;
+	font-family: 'Michroma', 'Roboto', sans-serif;
+	position: relative;
+	top:20px;
+
+}
+
