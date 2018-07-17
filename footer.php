@@ -13,18 +13,18 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class=" container site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'laser_highway' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Laser Highway' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'laser_highway' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'Laser Highway' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'laser_highway' ), 'laser_highway', '<a href="http://earlgreybot.com">Grey McGowan</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'Laser Highway' ), 'Laser Highway', '<a href="http://earlgreybot.com">Grey McGowan</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

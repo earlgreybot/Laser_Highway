@@ -82,11 +82,34 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Michroma', 'Roboto', sans-serif !important;
+	color: #8379f2 !important;
 }
 
 h1 {
 	font-size: 32px !important;
-	padding-top: 20px;
+}
+
+h2 {
+	font-size: 24px !important;
+}
+
+h3 {
+	font-size: 18px !important;
+}
+
+h4 {
+	font-size: 18px !important;
+	font-style: italic !important;
+}
+
+h5 {
+	font-size: 18px !important;
+	text-decoration: underline !important;
+}
+
+h6 {
+	font-family: 18px !important;
+	font-style: bold !important;
 }
 
 /*footer*/
@@ -185,8 +208,52 @@ table {
 # Calendar (Simple Calendar Plugin)
 --------------------------------------------------------------*/
 
+.simcal-date-format{
+	background-color: #f279e4 !important;
+	padding: 3px;
+	display: inline-block;
+}
 
+.simcal-day-label{
+	border: 0 !important;
+	display: inline-block;
+}
 
+.simcal-event-title{
+	font-family: 'Michroma', 'Roboto', sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	display: inline-block;
+	padding: 10px 0 10px 0 !important;
+	
+}
+
+.simcal-event-details p{
+	margin: 0;
+}
+
+.simcal-event-start,
+.simcal-event-end {
+	font-size: 14px !important;
+}
+
+.simcal-event-start-time,
+.simcal-event-end-time {
+	color: #79c5f2;
+}
+
+.simcal-event-address {
+	padding: 10px 0 10px 0;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.simcal-events p:last-child {
+	border: 2px solid #79c5f2;
+	text-align: center;
+	padding: 3px;
+	margin-bottom: 30px;
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -194,15 +261,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	border: 2px solid #79c5f2;
+	border-color: ;
+	background: inherit;
+	color: #79c5f2;
 	font-size: 12px;
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 7px;
 }
 
 button:hover,
@@ -238,9 +304,9 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	color: #e5d3d0 !important;
+	background-color: inherit;
+	border: 1px solid #e5d3d0 !important;
 	padding: 3px;
 }
 
@@ -702,3 +768,25 @@ a.nav-link {
 
 }
 
+.search-form {
+	margin-top: 140px;
+	position: relative;
+}
+
+
+/*about page*/ 
+
+h1.entry-title {
+	display: none;
+}
+
+.aboutmain{
+	background-color: #232122 !important;
+	padding: 20px;
+	height: auto;
+	border-bottom: 10px solid #262425;
+}
+
+#mainaboutheading{
+	font-size: 24px !important;
+}
