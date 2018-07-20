@@ -64,6 +64,7 @@
 				'menu_class'      => 'nav nav-fill',
 				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
 				'walker'          => new WP_Bootstrap_Navwalker(),
+				'link_after'	  => "<span class='activeicon'></span>"
 			) );
 			?>
 	</header><!-- #masthead -->

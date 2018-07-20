@@ -56,8 +56,14 @@ Commented out because bootstrap does this
 	Medium Slate Blue	#8379f2
 	Pale Magenta		#f279e4
 	Dust Storm			#e5d3d0
+	
+ Greys
 	Rasin Black 		#262425
-	Highlight Black		#232122
+	lowlight Black		#232122
+	Nav indicator		#514F50
+	
+ Accent
+	Indicator Green		#79F283
 
 */
 
@@ -768,11 +774,30 @@ a.nav-link {
 
 }
 
+#site-navigation {
+	margin-top: 20px;
+}
+
 .search-form {
 	margin-top: 140px;
 	position: relative;
 }
 
+.activeicon {
+	width: 25px;
+	height: 10px;
+	background-color: #514F50;
+	padding: auto;
+	margin: auto;
+	display: block;
+	position: relative;
+	bottom: 45px;
+	
+}
+
+.active .activeicon {
+	background-color: #79F283;
+}
 
 /*about page*/ 
 
@@ -789,4 +814,14 @@ h1.entry-title {
 
 #mainaboutheading{
 	font-size: 24px !important;
+}
+
+/* forms */
+.ninja-forms-req-symbol{
+	color: #79F283 !important;
+}
+
+.nf-form-cont {
+	background-color: #232122;
+	padding: 20px;
 }
