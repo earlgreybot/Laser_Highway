@@ -272,9 +272,9 @@ input[type="submit"] {
 	background: inherit;
 	color: #79c5f2;
 	font-size: 12px;
-	font-size: 0.75rem;
+	font-size: 0.9rem;
 	line-height: 1;
-	padding: 7px;
+	padding: 5px 10px 5px 10px;
 }
 
 button:hover,
@@ -314,6 +314,7 @@ textarea {
 	background-color: inherit;
 	border: 1px solid #e5d3d0 !important;
 	padding: 3px;
+	width: 100%;
 }
 
 input[type="text"]:focus,
@@ -778,11 +779,13 @@ a.nav-link {
 	margin-top: 20px;
 }
 
-.search-form {
+@media (min-width: 575px) {
+.searchformtop {
 	margin-top: 140px;
 	position: relative;
+	}
 }
-
+	
 .activeicon {
 	width: 25px;
 	height: 10px;
@@ -823,5 +826,5 @@ h1.entry-title {
 
 .nf-form-cont {
 	background-color: #232122;
-	padding: 20px;
+	padding: 20px, 20px, ;
 }

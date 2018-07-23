@@ -21,7 +21,8 @@
 	
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Michroma|Roboto" rel="stylesheet">
-
+	<!-- google verification -->
+	<meta name="google-site-verification" content="Q476T5t1zcB5YUHdF6Tv02X6UyxHLKTe6radgP0bZls" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,7 +31,7 @@
 
 	<header id="masthead" class="site-header container">
 		<div class="site-branding row">
-			<div class="header col-md-9">
+			<div class="header col-md-8 col-sm-6 col-xs-12">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -48,8 +49,10 @@
 				<p class="site-description"><?php echo $laser_highway_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 			</div>
-			<div class="search col-md-3">
-				<?php get_search_form() ?>
+			<div class="search col-md-4 col-sm-6 col-xs-12">
+				<div class="float-md-right float-sm-none searchformtop">
+					<?php get_search_form() ?>
+				
 			</div>
 		</div><!-- .site-branding -->
 		<span class='overdecoration container'>	--------------------------  ESSENTIALS -------------------------- </span>
