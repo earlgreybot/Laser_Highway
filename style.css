@@ -52,8 +52,8 @@ Commented out because bootstrap does this
 --------------------------------------------------------------*/
 
 /*colors
-	Maya Blue   		#79c5f2
-	Medium Slate Blue	#8379f2
+	Pale Blue   		#79c5f2
+	Pale Purple 		#8379f2
 	Pale Magenta		#f279e4
 	Dust Storm			#e5d3d0
 	
@@ -63,7 +63,8 @@ Commented out because bootstrap does this
 	Nav indicator		#514F50
 	
  Accent
-	Indicator Green		#79F283
+	Indicator Green		#79F283 - triad with pale purple and pale magenta
+	Indicator Orange	#f2a679 - complement with pale blue
 
 */
 
@@ -114,8 +115,8 @@ h5 {
 }
 
 h6 {
-	font-family: 18px !important;
-	font-style: bold !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
 }
 
 /*footer*/
@@ -245,7 +246,7 @@ table {
 
 .simcal-event-start-time,
 .simcal-event-end-time {
-	color: #79c5f2;
+	color: #f279e4;
 }
 
 .simcal-event-address {
@@ -268,7 +269,6 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 2px solid #79c5f2;
-	border-color: ;
 	background: inherit;
 	color: #79c5f2;
 	font-size: 12px;
@@ -281,7 +281,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	color: #8379f2;
 }
 
 button:active, button:focus,
@@ -348,15 +348,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #f279e4 !important;
+	color: #79c5f2 !important;
 }
 
 a:visited {
-	color: #8379f2 !important;
+	color: #f279e4 !important;
 }
 
 a:hover, a:focus, a:active {
-	color: #79c5f2 !important;
+	color: #8379f2 !important;
 }
 
 a:focus {
@@ -753,12 +753,11 @@ a.nav-link {
 	font-weight: bold;
 	height: 75px;
 	width: 75px;
-	border: 3px soild blue !important;
-	
+	border: 3px solid blue !important;	
 }
 
 .overdecoration {
-	border: 10px 0 0 0 solid red !important;
+	border-top: 10px solid red !important;
 	color: #e5d3d0;
 	font-weight: bold;
 	display: inline-block;
@@ -800,12 +799,21 @@ a.nav-link {
 	width: 25px;
 	height: 10px;
 	background-color: #514F50;
-	padding: auto;
 	margin: auto;
 	display: block;
 	position: relative;
 	bottom: 45px;
-	
+}
+
+.nav-link:hover > .activeicon {
+	animation: blink 1s linear infinite;
+	background-color: #f2a679;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+		}
 }
 
 .active .activeicon {
@@ -836,5 +844,4 @@ h1.entry-title {
 
 .nf-form-cont {
 	background-color: #232122;
-	padding: 20px, 20px, ;
 }
