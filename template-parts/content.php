@@ -29,8 +29,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php laser_highway_post_thumbnail(); ?>
-
+	<div class="alignright featuredimage">
+		<?php laser_highway_post_thumbnail(); ?>
+	</div>
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(

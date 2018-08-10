@@ -41,6 +41,7 @@ if ( ! function_exists( 'laser_highway_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 400, 400 ); // 50 pixels wide by 50 pixels tall, resize mode
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

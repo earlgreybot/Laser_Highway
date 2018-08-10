@@ -753,11 +753,9 @@ a.nav-link {
 	font-weight: bold;
 	height: 75px;
 	width: 75px;
-	border: 3px solid blue !important;	
 }
 
 .overdecoration {
-	border-top: 10px solid red !important;
 	color: #e5d3d0;
 	font-weight: bold;
 	display: inline-block;
@@ -804,7 +802,7 @@ a.nav-link {
 	position: relative;
 	bottom: 45px;
 }
-
+ /* makes the active icon blink */
 .nav-link:hover > .activeicon {
 	animation: blink 1s linear infinite;
 	background-color: #f2a679;
@@ -815,16 +813,13 @@ a.nav-link {
 		opacity: 0;
 		}
 }
+/*end animate*/
 
 .active .activeicon {
 	background-color: #79F283;
 }
 
 /*about page*/ 
-
-h1.entry-title {
-	display: none;
-}
 
 .aboutmain{
 	background-color: #232122 !important;
@@ -844,4 +839,48 @@ h1.entry-title {
 
 .nf-form-cont {
 	background-color: #232122;
+	padding: 10px 20px 10px 20px;
+}
+
+.nf-form-title > h3 {
+	font-size: 24px !important;
+}
+
+.nf-field-label > label {
+	color: #8379f2;
+	font-weight: normal !important;
+}
+
+.nf-error-msg {
+	color: #79F283 !important;
+}
+
+/* Posts */
+
+.post {
+	padding: 20px;
+	background-color: #232122;
+}
+
+.cat-links {
+	display: none;
+}
+
+.comments-link {
+	display: none;
+}
+
+.byline {
+	display: none;
+}
+
+h1.entry-title {
+	font-size: 24px !important;
+}
+
+/* Contact */
+.ico {
+	width: 75px;
+	height: 75px;
+	margin: 2px 2px;
 }

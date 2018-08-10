@@ -20,6 +20,7 @@ get_header();
 		
 		<?php
 		while ( have_posts() ) :
+			get_the_title();
 			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
