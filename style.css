@@ -786,13 +786,14 @@ a.nav-link {
 	margin-top: 20px;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 768px) {
 .searchformtop {
 	margin-top: 140px;
 	position: relative;
 	}
 }
-	
+
+
 .activeicon {
 	width: 25px;
 	height: 10px;
@@ -878,9 +879,17 @@ h1.entry-title {
 	font-size: 24px !important;
 }
 
+.featuredimage {
+	margin: 1.5em;
+}
+
 /* Contact */
 .ico {
 	width: 75px;
 	height: 75px;
 	margin: 2px 2px;
+}
+
+.contactside {
+	margin-top: 15px;
 }

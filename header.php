@@ -31,7 +31,7 @@
 
 	<header id="masthead" class="site-header container">
 		<div class="site-branding row">
-			<div class="header col-md-8 col-sm-6 col-xs-12">
+			<div class="header col-md-7 col-sm-12 col-xs-12">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -49,8 +49,8 @@
 				<p class="site-description"><?php echo $laser_highway_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 			</div>
-			<div class="search col-md-4 col-sm-6 col-xs-12">
-				<div class="float-md-right float-sm-none searchformtop">
+			<div class="search col-md-5 col-sm-12 col-xs-12">
+				<div class="float-md-right float-sm-right float-xs-none searchformtop">
 					<?php get_search_form() ?>
 				
 			</div>
