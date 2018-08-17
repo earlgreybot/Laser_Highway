@@ -59,7 +59,7 @@ Commented out because bootstrap does this
 	
  Greys
 	Rasin Black 		#262425
-	lowlight Black		#232122
+	lowlight Black		#1F1D1E
 	Nav indicator		#514F50
 	
  Accent
@@ -68,8 +68,13 @@ Commented out because bootstrap does this
 
 */
 
+
 html {
-	box-sizing: border-box;
+	display: block !important;
+	overflow-x: hidden !important; /* makes site unscrollable horizontally */
+	width: 100%;
+	margin: 0;
+  ``padding: 0;
 }
 
 *,
@@ -82,9 +87,12 @@ html {
 body {
 	background-color: #262425 !important;
 	color: #e5d3d0 !important;
-	font-family: 'Roboto', sans-serif !important;
+	font-family: 'Roboto', Times !important;
 	font-size: 14px !important;
 	font-weight: normal !important;
+	display: block !important;
+	overflow-x: hidden !important;
+	width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,7 +131,7 @@ h6 {
 
 .widget-area {
 	padding: 7px;
-	background-color: #232122;
+	background-color: #1F1D1E;
 	margin: 10px;
 	display: inline-block;
 }
@@ -744,20 +752,21 @@ object {
 	background-color: #79c5f2;
 }
 
+
 a.nav-link {
 	margin: 3px 0 0 0 !important;
 	border: 0 !important;
 	padding: 0 !important;
 	text-transform: uppercase;
 	color: #262425 !important;
-	font-weight: bold;
+	font-weight: 600;
 	height: 75px;
 	width: 75px;
 }
 
 .overdecoration {
 	color: #e5d3d0;
-	font-weight: bold;
+	font-weight: 600;
 	display: inline-block;
 	
 }
@@ -823,7 +832,7 @@ a.nav-link {
 /*about page*/ 
 
 .aboutmain{
-	background-color: #232122 !important;
+	background-color: #1F1D1E !important;
 	padding: 20px;
 	height: auto;
 	border-bottom: 10px solid #262425;
@@ -839,7 +848,7 @@ a.nav-link {
 }
 
 .nf-form-cont {
-	background-color: #232122;
+	background-color: #1F1D1E;
 	padding: 10px 20px 10px 20px;
 }
 
@@ -860,7 +869,7 @@ a.nav-link {
 
 .post {
 	padding: 20px;
-	background-color: #232122;
+	background-color: #1F1D1E;
 }
 
 .cat-links {
