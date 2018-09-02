@@ -280,8 +280,9 @@ input[type="submit"] {
 	background: inherit;
 	color: #79c5f2;
 	font-size: 12px;
-	font-size: 0.9rem;
-	line-height: 1;
+	padding: 0px;
+	height: 30px;
+	vertical-align: top;
 	padding: 5px 10px 5px 10px;
 }
 
@@ -321,8 +322,10 @@ textarea {
 	color: #e5d3d0 !important;
 	background-color: inherit;
 	border: 1px solid #e5d3d0 !important;
-	padding: 3px;
-	width: 100%;
+	padding: 0px;
+	height: 30px;
+	vertical-align: top;
+	padding: 5px;
 }
 
 input[type="text"]:focus,
@@ -894,11 +897,16 @@ h1.entry-title {
 
 /* Contact */
 .ico {
-	width: 75px;
-	height: 75px;
-	margin: 2px 2px;
+	width: 60px;
+	height: 60px;
+	margin: 4px 4px;
 }
 
 .contactside {
 	margin-top: 15px;
 }
+
+/* * { */
+	/* outline-style: solid; */
+    /* outline-color: red; */
+/* } */
