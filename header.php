@@ -56,7 +56,7 @@
 				
 			</div>
 		</div><!-- .site-branding -->
-		<span class='overdecoration container'>	--------------------------  ESSENTIALS -------------------------- </span>
+		<p class='overdecor'> <span class='overdecor'>ESSENTIALS</span> </p>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

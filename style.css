@@ -25,21 +25,30 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 # Typography
 # Elements
+# Calendar (Simple Calendar Plugin)
 # Forms
+		### Ninja Forms
 # Navigation
 	## Links
 	## Menus
+		### Small Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
 	## Posts and pages
+		### About Page
+		### Posts Page
+		### Contact
+		### Other
 	## Comments
 # Infinite scroll
 # Media
 	## Captions
 	## Galleries
+# Navigation and Header
+	
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -355,6 +364,35 @@ textarea {
 	width: 100%;
 }
 
+/*for mailchimp form*/ 
+#mce-EMAIL {
+	width: 100%;
+}
+
+/* ### Ninja Forms */
+.ninja-forms-req-symbol{
+	color: #79F283 !important;
+}
+
+.nf-form-cont {
+	background-color: #1F1D1E;
+	padding: 10px 20px 10px 20px;
+}
+
+.nf-form-title > h3 {
+	font-size: 24px !important;
+}
+
+.nf-field-label > label {
+	color: #8379f2;
+	font-weight: normal !important;
+}
+
+.nf-error-msg {
+	color: #79F283 !important;
+}
+
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -444,7 +482,7 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/* Small menu. */
+/* ### Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -594,6 +632,59 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+/* ### About Page*/ 
+
+.aboutmain{
+	background-color: #1F1D1E !important;
+	padding: 20px;
+	height: auto;
+	border-bottom: 10px solid #262425;
+}
+
+#mainaboutheading{
+	font-size: 24px !important;
+}
+
+
+/* ### Posts Page */
+
+.post {
+	padding: 20px;
+	background-color: #1F1D1E;
+}
+
+.cat-links {
+	display: none;
+}
+
+.comments-link {
+	display: none;
+}
+
+.byline {
+	display: none;
+}
+
+h1.entry-title {
+	font-size: 24px !important;
+}
+
+.featuredimage {
+	margin: 1.5em;
+}
+
+/* ### Contact */
+.ico {
+	width: 60px;
+	height: 60px;
+	margin: 4px 4px;
+}
+
+.contactside {
+	margin-top: 15px;
+} 
+
+/* ### other */ 
 .sticky {
 	display: block;
 }
@@ -767,11 +858,37 @@ a.nav-link {
 	width: 75px;
 }
 
-.overdecoration {
-	color: #e5d3d0;
+.overdecor {
+	line-height: 0.5;
+	height: 10px;
+	padding: 0;
+	border: 0;
+	margin: 0;
 	font-weight: 600;
-	display: inline-block;
-	
+}
+
+.overdecor span {
+  display: inline-block;
+  position: relative;  
+}
+
+.overdecor span:before,
+.overdecor span:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: white;
+	top: 0;
+	width: 100px;
+}
+
+.overdecor span:before {
+  right: 100%;
+  margin-right: 8px;
+}
+.overdecor span:after {
+  left: 100%;
+  margin-left: 8px;
 }
 
 .custom-logo {
@@ -795,7 +912,7 @@ a.nav-link {
 }
 
 #site-navigation {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 @media (min-width: 768px) {
@@ -832,81 +949,5 @@ a.nav-link {
 	background-color: #79F283;
 }
 
-/*about page*/ 
-
-.aboutmain{
-	background-color: #1F1D1E !important;
-	padding: 20px;
-	height: auto;
-	border-bottom: 10px solid #262425;
-}
-
-#mainaboutheading{
-	font-size: 24px !important;
-}
-
-/* forms */
-.ninja-forms-req-symbol{
-	color: #79F283 !important;
-}
-
-.nf-form-cont {
-	background-color: #1F1D1E;
-	padding: 10px 20px 10px 20px;
-}
-
-.nf-form-title > h3 {
-	font-size: 24px !important;
-}
-
-.nf-field-label > label {
-	color: #8379f2;
-	font-weight: normal !important;
-}
-
-.nf-error-msg {
-	color: #79F283 !important;
-}
-
-/* Posts */
-
-.post {
-	padding: 20px;
-	background-color: #1F1D1E;
-}
-
-.cat-links {
-	display: none;
-}
-
-.comments-link {
-	display: none;
-}
-
-.byline {
-	display: none;
-}
-
-h1.entry-title {
-	font-size: 24px !important;
-}
-
-.featuredimage {
-	margin: 1.5em;
-}
-
-/* Contact */
-.ico {
-	width: 60px;
-	height: 60px;
-	margin: 4px 4px;
-}
-
-.contactside {
-	margin-top: 15px;
-}
-
-/* * { */
-	/* outline-style: solid; */
-    /* outline-color: red; */
-/* } */
+/*debug
+* { border: 1px solid red; }
