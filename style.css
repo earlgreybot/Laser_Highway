@@ -83,7 +83,7 @@ html {
 	overflow-x: hidden !important; /* makes site unscrollable horizontally */
 	width: 100%;
 	margin: 0;
-  ``padding: 0;
+    padding: 0;
 }
 
 *,
@@ -519,6 +519,12 @@ a:hover, a:active {
 	width: 50%;
 }
 
+.nav {
+	display: block;
+	position: relative;
+	float: left;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -858,18 +864,25 @@ a.nav-link {
 	width: 75px;
 }
 
-.overdecor {
+p.overdecor {
 	line-height: 0.5;
-	height: 10px;
+	height: 12px;
 	padding: 0;
 	border: 0;
 	margin: 0;
 	font-weight: 600;
+	left: 115px;
+	bottom: 10px;
+	position: relative;
+	width: 79px;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 
 .overdecor span {
-  display: inline-block;
-  position: relative;  
+	display: inline-block;
+	position: relative; 
+
 }
 
 .overdecor span:before,
@@ -877,51 +890,71 @@ a.nav-link {
 	content: "";
 	position: absolute;
 	height: 2px;
-	background: white;
+	background: #e5d3d0;
 	top: 0;
 	width: 100px;
 }
 
 .overdecor span:before {
-  right: 100%;
-  margin-right: 8px;
+	right: 100%;
+	margin-right: 8px !important;
 }
 .overdecor span:after {
-  left: 100%;
-  margin-left: 8px;
+	left: 100%;
+	margin-left: 8px !important;
 }
 
-.custom-logo {
+.custom-logo-link {
 	max-width: 200px !important;
-	display: inline;
 }
+
+@media (max-width: 767px){
+	.custom-logo-link {
+	max-width: 200px !important;
+	width: 200px;
+	display: block;
+	margin: auto;
+	}
+}
+
+@media (max-width: 767px){
+	.main-nav-wrapper {
+	max-width: 350px !important;
+	width: 350px;
+	display: block;
+	margin: auto;
+	}	
+}
+
+@media (max-width: 767px){
+	.search-form {
+	max-width: 240px !important;
+	width: 240px;
+	display: block;
+	margin: auto;
+	}	
+}
+
 
 .site-title {
 	display: none;
 }
 
-.site-description {
-	display: inline-block;
-	width: 40%;
-	min-width: 250px;
-	margin: 20px;
-	font-family: 'Michroma', 'Roboto', sans-serif;
-	position: relative;
-	top:20px;
-
-}
 
 #site-navigation {
-	margin-top: 30px;
+	margin-top: 10px;
+
 }
 
 @media (min-width: 768px) {
 .searchformtop {
 	margin-top: 140px;
 	position: relative;
+	width:  240px !important;
+	margin: auto;
+	display: block;
 	}
 }
-
 
 .activeicon {
 	width: 25px;
@@ -950,4 +983,4 @@ a.nav-link {
 }
 
 /*debug
-* { border: 1px solid red; }
+* { border: 1px solid red; } */

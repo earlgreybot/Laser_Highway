@@ -56,21 +56,26 @@
 				
 			</div>
 		</div><!-- .site-branding -->
-		<p class='overdecor'> <span class='overdecor'>ESSENTIALS</span> </p>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-				'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
-				'container'       => 'nav',
-				'container_class' => 'main-navigation col-md-6',
-				'container_id'    => 'site-navigation',
-				'menu_class'      => 'nav nav-fill',
-				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-				'walker'          => new WP_Bootstrap_Navwalker(),
-				'link_after'	  => "<span class='activeicon'></span>"
-			) );
-			?>
+		<div class='container main-nav-wrapper'>
+					<p class='overdecor'> 
+						<span class='overdecor'>ESSENTIALS</span> 
+					</p>
+
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+						'container'       => 'nav',
+						'container_class' => 'main-navigation col-md-6',
+						'container_id'    => 'site-navigation',
+						'menu_class'      => 'nav nav-fill',
+						'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+						'link_after'	  => "<span class='activeicon'></span>"
+					) );
+					?>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
