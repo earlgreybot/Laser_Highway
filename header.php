@@ -50,8 +50,8 @@
 				<p class="site-description"><?php echo $laser_highway_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 			</div>
-			<div class="search col-md-5 col-sm-12 col-xs-12">
-				<div class="float-md-right float-sm-right float-xs-none searchformtop">
+			<div class="search searchformtop col-md-5 col-sm-12 col-xs-12">
+				<div class="float-md-right float-sm-right float-xs-none">
 					<?php get_search_form() ?>
 				
 			</div>

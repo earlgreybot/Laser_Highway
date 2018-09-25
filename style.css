@@ -908,6 +908,8 @@ p.overdecor {
 	max-width: 200px !important;
 }
 
+/* centering header content */
+
 @media (max-width: 767px){
 	.custom-logo-link {
 	max-width: 200px !important;
@@ -927,14 +929,29 @@ p.overdecor {
 }
 
 @media (max-width: 767px){
-	.search-form {
-	max-width: 240px !important;
-	width: 240px;
+	.searchformtop {
+	max-width: 270px !important;
+	width: 270px !important;
 	display: block;
-	margin: auto;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	position: relative;
 	}	
 }
 
+@media (min-width: 768px) {
+.searchformtop { 
+	margin-top: 140px !important;
+	max-width: 270px !important;
+	position: relative;
+	width: 270px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block;
+	}
+} 
+
+/*end centering*/
 
 .site-title {
 	display: none;
@@ -946,15 +963,7 @@ p.overdecor {
 
 }
 
-@media (min-width: 768px) {
-.searchformtop {
-	margin-top: 140px;
-	position: relative;
-	width:  240px !important;
-	margin: auto;
-	display: block;
-	}
-}
+
 
 .activeicon {
 	width: 25px;
