@@ -921,8 +921,8 @@ p.overdecor {
 
 @media (max-width: 767px){
 	.searchformtop {
-	max-width: 270px !important;
-	width: 270px !important;
+	max-width: 300px !important;
+	width: 300px !important;
 	display: block;
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -937,7 +937,7 @@ p.overdecor {
 	position: relative;
 	width: 270px !important;
 	margin-left: auto !important;
-	margin-right: auto !important;
+	margin-right: auto	!important;
 	display: block;
 	}
 } 
