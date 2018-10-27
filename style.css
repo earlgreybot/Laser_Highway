@@ -70,6 +70,7 @@ Commented out because bootstrap does this
 	Rasin Black 		#262425
 	lowlight Black		#1F1D1E
 	Nav indicator		#514F50
+	Polaroid background #969596
 	
  Accent
 	Indicator Green		#79F283 - triad with pale purple and pale magenta
@@ -137,15 +138,6 @@ h6 {
 }
 
 /*footer*/
-
-.site-info {
-	margin-left: 20px;
-	margin-top: 3%;
-	padding: 7px;
-	display: inline-block;
-	font-size: 12px;
-	
-}
 
 
 hr {
@@ -600,24 +592,19 @@ a:hover, a:active {
 }
 
 .widget li {
-	display: inline-block;
 	list-style: none;
-	padding-right: 7px;
 	font-size: 12px;
+	display: inline-block;
+	padding-left: 3px;
 }
 
 
 .widget ul {
-	margin: 3%;
-	padding: 3%;
-	border: 3%;
+	margin: 0%;
+	padding: 7px;
+	border: 0%;
 	background-color: #1F1D1E;
-}
-
-#meta-2 {
-	border: 0 !important;
-	height: 0;
-	padding: 0;
+	display: inline-block;
 }
 
 .widget-title {
@@ -863,7 +850,9 @@ a.nav-link {
 	width: 75px;
 }
 
-p.overdecor {
+/* the decoration above the about, posts and contact pages */
+
+p.overdecor-essentials {
 	line-height: 0.5;
 	height: 12px;
 	padding: 0;
@@ -876,29 +865,73 @@ p.overdecor {
 	width: 79px;
 	margin-top: 20px;
 	margin-bottom: 5px;
+	display: inline-block;
 }
 
-.overdecor span {
+.overdecor-essentials span {
 	display: inline-block;
 	position: relative; 
 
 }
 
-.overdecor span:before,
-.overdecor span:after {
+.overdecor-essentials span:before,
+.overdecor-essentials span:after {
 	content: "";
 	position: absolute;
 	height: 2px;
 	background: #e5d3d0;
 	top: 0;
-	width: 100px;
+	width: 80px;
 }
 
-.overdecor span:before {
+.overdecor-essentials span:before {
 	right: 100%;
 	margin-right: 8px !important;
 }
-.overdecor span:after {
+.overdecor-essentials span:after {
+	left: 100%;
+	margin-left: 8px !important;
+}
+
+/*the decoration above the bios and events pages*/
+
+p.overdecor-further {
+	line-height: 0.5;
+	height: 12px;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-weight: 600;
+	left: 281px;
+	bottom: 10px;
+	position: relative;
+	width: 79px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.overdecor-further span {
+	display: inline-block;
+	position: relative; 
+
+}
+
+.overdecor-further span:before,
+.overdecor-further span:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: #e5d3d0;
+	top: 0;
+	width: 40px;
+}
+
+.overdecor-further span:before {
+	right: 100%;
+	margin-right: 8px !important;
+}
+.overdecor-further span:after {
 	left: 100%;
 	margin-left: 8px !important;
 }
@@ -988,6 +1021,27 @@ p.overdecor {
 
 .active .activeicon {
 	background-color: #79F283;
+}
+
+/*--------------------------------------------------------------
+# Custom Post Types
+--------------------------------------------------------------*/
+
+/*bio*/
+article.bio {
+	margin: 20px;
+	display: inline-block;
+	float: left;
+	background: #969596;
+	padding: 10px;
+} 
+
+h2.bio{
+	color: #262425 !important;
+}
+
+article.bio img:hover {
+	filter: hue-rotate(45deg);
 }
 
 /*debug

@@ -57,10 +57,15 @@
 			</div>
 		</div><!-- .site-branding -->
 		<div class='container main-nav-wrapper'>
-					<p class='overdecor'> 
-						<span class='overdecor'>ESSENTIALS</span> 
-					</p>
-
+					<div class='overdecor'>
+						<p class='overdecor-essentials'> 
+							<span class='overdecor-essentials'>ESSENTIALS</span> 
+						</p>
+						<p class='overdecor-further'>
+							<span class='overdecor-further'> FURTHER
+							</span>
+						</p>
+					</div>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',

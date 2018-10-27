@@ -17,23 +17,29 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area"> 
-		<h1> bio test </h1>	
-		<main id="main" class="site-main">
+		<h1> Biographies </h1>	
+		<main id="main bio" class="site-main">
 	
 		<?php
-		while ( have_posts() ) :
-			get_the_title();
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			//if ( comments_open() || get_comments_number() ) :
-			//	comments_template();
-			//endif;
-
-		endwhile; // End of the loop.
-		?>
+		$args = array(
+		'post_type' => 'bio',
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
+		);
+		$bio = new WP_Query($args);
+		
+		if( $bio->have_posts() ): 
+			while( $bio->have_posts() ): $bio->the_post(); ?>
+				<article class='bio'>
+					<a href='<?php the_permalink();?>' >
+					<?php the_post_thumbnail('medium'); ?>
+					<h2 class='bio'><?php the_title(); ?></h2>
+					</a>
+				</article>
+			<?php endwhile; ?>
+		<?php else: ?>
+			<p> sorry, we can't find any bios. </p>
+		<?php endif; ?>
 		
 		</main><!-- #main -->
 	</div><!-- #primary -->
