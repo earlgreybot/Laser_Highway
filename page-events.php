@@ -17,23 +17,29 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<h1> event test </h1>
+		<h1> Events </h1>
 		<main id="main" class="site-main">
 		
 		<?php
-		while ( have_posts() ) :
-			get_the_title();
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			//if ( comments_open() || get_comments_number() ) :
-			//	comments_template();
-			//endif;
-
-		endwhile; // End of the loop.
-		?>
+		$args = array(
+		'post_type' => 'events',
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
+		);
+		$event = new WP_Query($args);
+		
+		if( $event->have_posts() ): 
+			while( $event->have_posts() ): $event->the_post(); ?>
+				<article class='event'>
+					<a href='<?php the_permalink();?>' >
+					<?php the_post_thumbnail('medium'); ?>
+					<h2 class='event'><?php the_title(); ?></h2>
+					</a>
+				</article>
+			<?php endwhile; ?>
+		<?php else: ?>
+			<p> sorry, we can't find any events. </p>
+		<?php endif; ?>
 		
 		</main><!-- #main -->
 	</div><!-- #primary -->

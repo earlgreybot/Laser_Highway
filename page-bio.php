@@ -18,23 +18,23 @@ get_header();
 
 	<div id="primary" class="content-area"> 
 		<h1> Biographies </h1>	
-		<main id="main biopage" class="site-main">
+		<main id="main bio" class="site-main">
 	
 		<?php
 		$args = array(
 		'post_type' => 'bio',
 		'orderby' => 'menu_order',
 		'order' => 'ASC',
-		'posts_per_page'=>'100'
+		'posts_per_page'=>'5'
 		);
 		$bio = new WP_Query($args);
 		
 		if( $bio->have_posts() ): 
 			while( $bio->have_posts() ): $bio->the_post(); ?>
-				<article class='biopage'>
+				<article class='bio'>
 					<a href='<?php the_permalink();?>' >
 					<?php the_post_thumbnail('medium'); ?>
-					<h2 class='biopage'><?php the_title(); ?></h2>
+					<h2><?php the_title(); ?> TEST</h2>
 					</a>
 				</article>
 			<?php endwhile; ?>

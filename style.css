@@ -1027,8 +1027,16 @@ p.overdecor-further {
 # Custom Post Types
 --------------------------------------------------------------*/
 
+article {
+	margin-top: 40px !important;
+}
+
+div#content {
+	margin-top: 40px !important;
+}
+
 /*bio*/
-article.bio {
+article.biopage {
 	margin: 20px;
 	display: inline-block;
 	float: left;
@@ -1036,12 +1044,29 @@ article.bio {
 	padding: 10px;
 } 
 
-h2.bio{
+h2.biopage{
 	color: #262425 !important;
 }
 
-article.bio img:hover {
-	filter: hue-rotate(45deg);
+article.biopage img:hover {
+	filter: saturate(2);
+}
+
+/*event*/
+article.event {
+	margin: 20px;
+	display: inline-block;
+	float: left;
+	background: #969596;
+	padding: 10px;
+} 
+
+h2.event{
+	color: #262425 !important;
+}
+
+article.event img:hover {
+	filter: saturate(1.5);
 }
 
 /*debug
