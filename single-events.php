@@ -17,7 +17,8 @@ get_header();
 			<?php get_template_part( 'template-parts/content', get_post_type() );?>
 			<!--START AND END TIMES-->
 			<?php if(get_field('event_start_time') AND get_field('event_end_time')  ): ?>
-					<span class='event_start_time'>From <?php the_field('event_start_time');?> to <?php the_field('event_end_time');?> </span>
+					<span class='event_start_time'>From <?php the_field('event_start_time');?> to <?php 
+the_field('event_end_time');?> </span>
 			<?php endif; ?>
 			<!--EVENT LOCATION-->
 			<?php if(get_field('event_location') ): ?>
@@ -59,20 +60,51 @@ get_header();
 						<p class='event_summary'><?php the_field('event_summary'); ?></p>
 				<?php endif; ?>
 			<!--EVENT ARTISTS-->
-			<?php if(get_field('event_artists') ): ?>
-				<ul>
-					<?php foreach ( the_field('event_artists') as $post): ?>
-					<li>
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-						<span> Post Object Custom Field: <?php the_field('event_artists'); ?></span>
-					</li>
-						<?php endforeach; ?>
-				</ul>		
-			<?php wp_reset_postdata(); ?>			
-				<?php endif; ?>
+		
+		
+		
+		
+		
+		
+		<?php $event_artists = get_field('event_artists');
+
+if( $event_artists ): ?>
+    <ul>
+    <?php foreach( $event_artists as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <span>
+				<?php the_field('field_name'); 
+				$content = get_the_content();
+				$length = 200;
+				if(strlen($content) > $length) 
+				{
+				$content = substr($content, 0, $length) . "..."; 
+				}
+				echo $content; ?>
+				<span><a href='<?php the_permalink(); ?>'> See Full Bio</a></span>
+				</span>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works 
+correctly ?>
+<?php endif;
+
+?>
+		
+		
+		
+		
+		
+		
+		
+		
 			<!--ACK OF COUNTRY-->
 			<?php if(get_field('acknowledgement_of_country') ): ?>
-						<p class='acknowledgement_of_country'><?php the_field('acknowledgement_of_country'); ?></p>
+						<p class='acknowledgement_of_country'><?php the_field(
+'acknowledgement_of_country'); ?></p>
 				<?php endif; ?>
 			<?php the_post_navigation(); ?>
 			
