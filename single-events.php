@@ -74,6 +74,7 @@ if( $event_artists ): ?>
         <?php setup_postdata($post); ?>
         <li>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			<div> <?php the_post_thumbnail('thumbnail'); ?> </div> 
             <span>
 				<?php the_field('field_name'); 
 				$content = get_the_content();
