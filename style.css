@@ -1069,5 +1069,15 @@ article.event img:hover {
 	filter: saturate(1.5);
 }
 
+/* individual bio */
+div.externallinks {
+	border: 5px solid red;
+	
+}
+
+ul.externallinks {
+	list-style-type: none; 
+}
+
 /*debug
 * { border: 1px solid red; } */
