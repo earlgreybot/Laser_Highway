@@ -1052,6 +1052,10 @@ article.biopage img:hover {
 	filter: saturate(2);
 }
 
+#role {
+	color: #f279e4 !important;
+}
+
 /*event*/
 article.event {
 	margin: 20px;
@@ -1071,7 +1075,8 @@ article.event img:hover {
 
 /* individual bio */
 div.externallinks {
-	border: 5px solid red;
+	padding: 10px 1px 1px 10px;
+	background-color: #1F1D1E;
 	
 }
 
@@ -1079,5 +1084,13 @@ ul.externallinks {
 	list-style-type: none; 
 }
 
+div.contentrow {
+	padding: 0px 0px 25px 25px;
+}
+
+div.embedrow{
+	padding-bottom: 30px;
+}
+
 /*debug
-* { border: 1px solid red; } */
+* { border: 1px solid red; }*/

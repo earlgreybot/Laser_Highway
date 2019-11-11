@@ -10,25 +10,50 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
-			<div class="row">
+			<div class="row titlerow">
 			<?php
 			while ( have_posts() ) :
-				the_post();
+				the_post(); ?>
 				
-				get_template_part( 'template-parts/content', get_post_type() );
-				?>
+				<!--TITLE-->
+				<div class="titlelocation col-md-6 col-sm-12">
+					<h1>
+					<?php 
+					echo get_the_title()?> 
+					
+				
+				<!--TITLE-->
+				<!--LOCATION-->
+				
+					<?php if(get_field('location') ): ?>
+							<span class='location'> - <?php the_field('location'); ?></span>
+					<?php endif; ?>
+					</h1>
+				</div>
+				<!--END LOCATION-->
 				<!--ROLE-->
-				<?php if(get_field('role') ): ?>
-						<span class='role'><?php the_field('role'); ?></span>
-				<?php endif; ?>
+				<div class="role col-md-6 col-sm-12">
+					<?php if(get_field('role') ): ?>
+							<h3 id=role><?php the_field('role'); ?></h3>
+					<?php endif; ?>
+				</div>
 				<!--END ROLE-->
-				<!--LOCATION-->
-				<?php if(get_field('location') ): ?>
-						<span class='location'><?php the_field('location'); ?></span>
-				<?php endif; ?>
-				<!--LOCATION-->
 			</div>
-			<div class="row">
+			<div class="row contentrow">
+				<!--BODY-->
+				<div class="body col-md-8 col-sm-12">
+					<?php 
+					echo the_content()	?> 
+				</div>
+				<!--END BODY-->
+				<!--FEATURED IMAGE-->
+				<div class="image col-md-4 col-sm-12">
+					<?php 
+					echo the_post_thumbnail()?> 
+				</div>
+				<!--END FEATURED IMAGE-->
+			</div>
+			<div class="row embedrow">
 				<div class="col-sm-12 col-md-4">
 				<!-- URLS -->	
 				<div class='externallinks'>
@@ -82,8 +107,9 @@ get_header();
 						<div><?php the_field('embed'); ?></div>
 				<?php endif; ?>
 			</div>
+			<!--END EMBED-->
 				<?php
-				the_post_navigation();
+				
 		
 			endwhile; // End of the loop.
 			?>
