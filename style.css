@@ -1092,5 +1092,25 @@ div.embedrow{
 	padding-bottom: 30px;
 }
 
+/* individual event */
+
+.eventessentials, .eventtickets{
+	margin:10px;
+	padding:10px;
+	background-color: #1F1D1E !important;
+}
+
+.event_genres{
+	font-family: 'Michroma', 'Roboto', sans-serif !important;
+	color: #8379f2 !important;
+	margin:10px;
+	padding:10px;
+	background-color: #1F1D1E !important;
+}
+	
+
+
+	
+
 /*debug
 * { border: 1px solid red; }*/
