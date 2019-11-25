@@ -1102,15 +1102,71 @@ div.embedrow{
 
 .event_genres{
 	font-family: 'Michroma', 'Roboto', sans-serif !important;
+	font-size: 1.5em;
 	color: #8379f2 !important;
 	margin:10px;
 	padding:10px;
 	background-color: #1F1D1E !important;
 }
+
+.eventbio {
+	margin: 10px;
+	display: inline-block;
+	float: left;
+	padding: 5px;
+	width: 325px;
+} 
+
+ul.biolist{
+	margin-top:30px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	height: 100%;
+	width: 100%;
+}
 	
+.artistim{
+	margin:auto;
+	display:block;
+}
+
+.imblock{
+	display:block;
+}
 
 
+.eventbiotitle{
+	text-align: center;
+}
 	
+.strong{
+	font-weight: bold;
+	font-size: 1.5em;
+}
 
-/*debug
-* { border: 1px solid red; }*/
+.eventartists{
+	display: block;
+	float:none;
+	min-width: 400px;
+	
+}
+.acknowledgement_of_country{
+	min-width: 400px;
+	width:100%;
+	margin:10px;
+	padding:10px;
+	background-color: #1F1D1E !important;
+	
+}
+
+.eventh1{
+	padding-bottom:10px;
+}
+
+
+ /* * { border: 1px solid red; }  */
