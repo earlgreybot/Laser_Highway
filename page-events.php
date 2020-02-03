@@ -12,12 +12,10 @@
  *
  * @package Laser_Highway
  */
-
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
-		<h1> Events </h1>
+		<h1 class='event'> Events test </h1>
 		<main id="main" class="site-main">
 		
 		<?php
@@ -38,12 +36,11 @@ get_header();
 				</article>
 			<?php endwhile; ?>
 		<?php else: ?>
-			<p> sorry, we can't find any events. </p>
+			<p class='event'> sorry, we can't find any events. </p>
 		<?php endif; ?>
 		
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php
 get_sidebar();
-get_footer();
+get_footer();
